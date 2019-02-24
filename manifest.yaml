@@ -1,4 +1,4 @@
-image: rodriguezst/filebrowser-multiarch:latest
+image: n0cloud/filebrowser-multiarch:latest
 manifests:
   -
     image: n0cloud/filebrowser-multiarch:armv7
