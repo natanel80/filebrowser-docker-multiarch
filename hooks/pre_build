@@ -13,3 +13,10 @@ curl -s https://api.github.com/repos/filebrowser/filebrowser/releases/latest \
   | xargs curl -L \
   | tar -zx \
   && mv filebrowser filebrowser.linux_armv7
+  curl -s https://api.github.com/repos/filebrowser/filebrowser/releases/latest \
+  | grep browser_download_url \
+  | grep linux-arm64 \
+  | cut -d '"' -f 4 \
+  | xargs curl -L \
+  | tar -zx \
+  && mv filebrowser filebrowser.linux_arm64

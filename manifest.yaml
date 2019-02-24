@@ -1,13 +1,18 @@
 image: rodriguezst/filebrowser-multiarch:latest
 manifests:
   -
-    image: rodriguezst/filebrowser-multiarch:armv7
+    image: n0cloud/filebrowser-multiarch:armv7
     platform:
       architecture: arm
       os: linux
       variant: 7
   -
-    image: rodriguezst/filebrowser-multiarch:amd64
+    image: n0cloud/filebrowser-multiarch:arm64
+    platform:
+      architecture: arm64
+      os: linux
+  -
+    image: n0cloud/filebrowser-multiarch:amd64
     platform:
       architecture: amd64
       os: linux
